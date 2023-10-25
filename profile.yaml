@@ -6,6 +6,8 @@ groups:
       - "severity:INFORMATION"
       - "severity:TYPO"
       - "severity:WEAK WARNING"
+      - "category:EditorConfig"
+      - "category:Roslyn/General" # Exclude Roslyn checks
 
 inspections:
   - group: ExcludedBySeverity
