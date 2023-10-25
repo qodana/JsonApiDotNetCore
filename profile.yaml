@@ -1,4 +1,4 @@
-baseProfile: "Default"
+baseProfile: empty
 name: "Custom profile"
 
 groups:
@@ -7,9 +7,27 @@ groups:
       - "severity:INFORMATION"
       - "severity:TYPO"
       - "severity:WEAK WARNING"
-      - "category:EditorConfig"
-      - "category:Roslyn/General" # Exclude Roslyn checks
+
+  - groupId: IncludedCategories
+    groups:
+      - "category:C#"
+      - "category:C++"
+      - "category:VB.NET"
+      - "category:F#"
+      - "category:Angular 2 HTML"
+      - "category:T4"
+      - "category:XAML"
+      - "category:Blazor"
+      - "category:ASP.NET route templates"
+      - "category:Razor"
+      - "category:Aspx"
+      - "category:ResX"
+      - "category:Web.Config"
+      - "category:HttpHandler or WebService"
+      - "category:RegExpBase"
 
 inspections:
+  - group: IncludedCategories
+    enabled: true
   - group: ExcludedBySeverity
     enabled: false
