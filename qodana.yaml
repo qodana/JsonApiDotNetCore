@@ -1,0 +1,4 @@
+bootstrap: cp JsonApiDotNetCore.sln.DotSettings JsonApiDotNetCore.sln.DotSettings.bkp && sed -i '$ d' JsonApiDotNetCore.sln.DotSettings && tail -n +2 WarningSeverities.DotSettings >> JsonApiDotNetCore.sln.DotSettings && dotnet build
+dotnet:
+  solution: JsonApiDotNetCore.sln
+  configuration: Release
