@@ -1,0 +1,12 @@
+baseProfile: "Default"
+
+groups:
+  - groupId: ExcludedBySeverity
+    groups:
+      - "severity:INFORMATION"
+      - "severity:TYPO"
+      - "severity:WEAK WARNING"
+
+inspections:
+  - group: ExcludedBySeverity
+    enabled: false
