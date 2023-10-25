@@ -1,4 +1,5 @@
 baseProfile: "Default"
+name: "Custom profile"
 
 groups:
   - groupId: ExcludedBySeverity
