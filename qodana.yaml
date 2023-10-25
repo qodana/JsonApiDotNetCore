@@ -2,3 +2,5 @@ bootstrap: cp JsonApiDotNetCore.sln.DotSettings JsonApiDotNetCore.sln.DotSetting
 dotnet:
   solution: JsonApiDotNetCore.sln
   configuration: Release
+profile:
+    path: profile.yaml
